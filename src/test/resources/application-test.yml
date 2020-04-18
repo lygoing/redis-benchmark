@@ -1,0 +1,21 @@
+vertx:
+    main:
+        preferNativeTransport: true
+
+redis:
+    cache-server:
+        maxPoolSize: 1
+        maxPoolWaiting: 100000
+        poolCleanerInterval: 1000
+        type: STANDALONE
+        endpoints:
+            - redis://localhost:6379
+        netClientOptions:
+            tcpKeepAlive: true
+            trustAll: true
+            tcpFastOpen: true
+            tcpNoDelay: true
+
+
+
+
